@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Kelas Adem"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Aljabar"
+        menu: 
+          - spl2v-app.qmd
+      - text: "Statistika"
+        menu: 
+          - kuartil-box-plot.qmd
+      - about.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Aljabar"
+        contents:
+          - spl2v-app.qmd
+      - text: "---"
+      - section: "Statitika"
+        contents:
+          - kuartil-box-plot.qmd
+  back-to-top-navigation: true
+  page-footer: 
+    background: light
+    left: "Kelas Adem <br>SMAN 1 Majalengka" 
+    right: 
+      - icon: youtube
+        href: https://www.youtube.com/@muchamadekadjuniararifien1518
+  reader-mode: true
+    
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
